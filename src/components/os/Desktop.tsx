@@ -29,12 +29,15 @@ const Desktop: React.FC = () => {
       <div className="absolute inset-0 futuristic-grid-bg opacity-20 pointer-events-none z-[1]" />
 
       {/* Desktop Icons */}
-      <DesktopIcons />
+      {!maximizedWindow && <DesktopIcons />}
 
-      <DesktopControls />
+      {maximizedWindow && <DesktopControls />}
 
       {/* Windows Layer */}
-      <div className="relative z-10 w-full h-full p-4">
+      <div className={`relative z-10 w-full h-full ${
+        maximizedWindow ? "" : "p-4"
+        }`}
+      >
         {(maximizedWindow
           ? [maximizedWindow]
           : windows
@@ -46,7 +49,7 @@ const Desktop: React.FC = () => {
       </div>
 
       {/* AI Portfolio Copilot */}
-      <AIAssistant />
+      {maximizedWindow && <AIAssistant />}
 
       {/* Taskbar */}
       <div className="absolute bottom-0 left-0 right-0 z-50">

@@ -98,9 +98,11 @@ const Window: React.FC<WindowProps> = ({ data }) => {
       dragMomentum={false}
       onDragEnd={handleDragEnd}
       style={{
-        zIndex: data.zIndex,
-        position: "absolute",
-      }}
+  zIndex: data.zIndex,
+  position: data.isMaximized ? "fixed" : "absolute",
+  top: data.isMaximized ? 0 : undefined,
+  left: data.isMaximized ? 0 : undefined,
+}}
       className={`os-window flex flex-col ${data.isMaximized ? "rounded-none" : ""}`}
     >
       {/* Header */}
