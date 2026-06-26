@@ -14,6 +14,9 @@ import DesktopControls from "./DesktopControls";
 
 const Desktop: React.FC = () => {
   const { windows } = useOSStore();
+  const maximizedWindow = windows.find(
+    (w) => w.isOpen && !w.isMinimized && w.isMaximized
+  );
 
   return (
     <div className="os-desktop">
@@ -32,14 +35,14 @@ const Desktop: React.FC = () => {
 
       {/* Windows Layer */}
       <div className="relative z-10 w-full h-full p-4">
-        {windows
-          .filter((window) => window.isOpen && !window.isMinimized)
-          .map((window) => (
-            <Window
-              key={window.id}
-              data={window}
-            />
-          ))}
+        {(maximizedWindow
+          ? [maximizedWindow]
+          : windows
+              .filter((w) => w.isOpen && !w.isMinimized)
+              .sort((a, b) => a.zIndex - b.zIndex)
+        ).map((window) => (
+          <Window key={window.id} data={window} />
+        ))}
       </div>
 
       {/* AI Portfolio Copilot */}

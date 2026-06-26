@@ -80,10 +80,24 @@ const initialWindows: WindowState[] = [
 export const useOSStore = create<OSState>((set) => ({
   windows: initialWindows,
   activeWindowId: 'stats',
-  openWindow: (id) => set((state) => ({
-    windows: state.windows.map(w => w.id === id ? { ...w, isOpen: true, isMinimized: false } : w),
-    activeWindowId: id,
-  })),
+  openWindow: (id) =>
+  set((state) => {
+    const maxZ = Math.max(...state.windows.map((w) => w.zIndex));
+
+    return {
+      windows: state.windows.map((w) =>
+        w.id === id
+          ? {
+              ...w,
+              isOpen: true,
+              isMinimized: false,
+              zIndex: maxZ + 1,
+            }
+          : w
+      ),
+      activeWindowId: id,
+    };
+  }),
   closeWindow: (id) => set((state) => ({
     windows: state.windows.map(w => w.id === id ? { ...w, isOpen: false } : w),
     activeWindowId: state.activeWindowId === id ? null : state.activeWindowId,
