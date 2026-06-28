@@ -53,6 +53,16 @@ const initialWindows: WindowState[] = [
     isMaximized: false,
     zIndex: 12,
     position: { x: 450, y: 100 },
+    size: { width: 800, height: 600 },
+  },
+  {
+    id: 'papers',
+    title: 'Research_Papers.exe',
+    isOpen: false,
+    isMinimized: false,
+    isMaximized: false,
+    zIndex: 11,
+    position: { x: 350, y: 120 },
     size: { width: 600, height: 500 },
   },
   {
@@ -62,8 +72,8 @@ const initialWindows: WindowState[] = [
     isMinimized: false,
     isMaximized: false,
     zIndex: 11,
-    position: { x: 50, y: 50 },
-    size: { width: 400, height: 300 },
+    position: { x: 145, y: 50 },
+    size: { width: 420, height: 560 },
   },
   {
     id: 'terminal',
@@ -105,7 +115,7 @@ export const useOSStore = create<OSState>((set) => ({
   focusWindow: (id) => set((state) => {
     const maxZ = Math.max(...state.windows.map(w => w.zIndex));
     return {
-      windows: state.windows.map(w => w.id === id ? { ...w, zIndex: maxZ + 1 } : w),
+      windows: state.windows.map(w => w.id === id ? { ...w, isMinimized: false, zIndex: maxZ + 1 } : w),
       activeWindowId: id,
     };
   }),
@@ -114,29 +124,40 @@ export const useOSStore = create<OSState>((set) => ({
     activeWindowId: state.activeWindowId === id ? null : state.activeWindowId,
   })),
   maximizeWindow: (id) => set((state) => ({
-    windows: state.windows.map(w => w.id === id ? { ...w, isMaximized: !w.isMaximized } : w),
+    windows: state.windows.map(w => w.id === id ? { ...w, isMaximized: !w.isMaximized, isMinimized: false } : w),
+    activeWindowId: id,
   })),
   updatePosition: (id, x, y) => set((state) => ({
     windows: state.windows.map(w => w.id === id ? { ...w, position: { x, y } } : w),
   })),
 
   openAllWindows: () =>
-  set((state) => ({
-    windows: state.windows.map((w) => ({
-      ...w,
-      isOpen: true,
-      isMinimized: false,
-    })),
-    activeWindowId: "projects",
-  })),
+    set((state) => {
+      const positions = [
+        { x: 145, y: 50 }, { x: 200, y: 80 }, { x: 260, y: 110 },
+        { x: 320, y: 140 }, { x: 380, y: 90 }, { x: 440, y: 60 }, { x: 500, y: 100 },
+      ];
+      return {
+        windows: state.windows.map((w, i) => ({
+          ...w,
+          isOpen: true,
+          isMinimized: false,
+          isMaximized: false,
+          position: positions[i] || w.position,
+          zIndex: i + 10,
+        })),
+        activeWindowId: "projects",
+      };
+    }),
 
-closeAllWindows: () =>
-  set((state) => ({
-    windows: state.windows.map((w) => ({
-      ...w,
-      isOpen: false,
-      isMinimized: false,
+  closeAllWindows: () =>
+    set((state) => ({
+      windows: state.windows.map((w) => ({
+        ...w,
+        isOpen: false,
+        isMinimized: false,
+        isMaximized: false,
+      })),
+      activeWindowId: null,
     })),
-    activeWindowId: null,
-  })),
 }));

@@ -1,4 +1,4 @@
-export type WindowType = 'projects' | 'research' | 'philosophy' | 'contact' | 'stats' | 'terminal' | 'resume' ;
+export type WindowType = 'projects' | 'research' | 'philosophy' | 'contact' | 'stats' | 'terminal' | 'resume' | 'papers';
 
 export interface WindowState {
   id: WindowType;

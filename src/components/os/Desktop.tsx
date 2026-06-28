@@ -18,6 +18,12 @@ const Desktop: React.FC = () => {
     (w) => w.isOpen && !w.isMinimized && w.isMaximized
   );
 
+  // Always render all open+non-minimized windows so the minimize button inside
+  // a maximized window still works (the window stays mounted).
+  const visibleWindows = windows
+    .filter((w) => w.isOpen && !w.isMinimized)
+    .sort((a, b) => a.zIndex - b.zIndex);
+
   return (
     <div className="os-desktop">
       {/* 3D Background Layer */}
@@ -28,22 +34,15 @@ const Desktop: React.FC = () => {
       {/* Grid Overlay */}
       <div className="absolute inset-0 futuristic-grid-bg opacity-20 pointer-events-none z-[1]" />
 
-      {/* Desktop Icons */}
+      {/* Desktop Icons — hide when any window is maximized */}
       {!maximizedWindow && <DesktopIcons />}
 
+      {/* DesktopControls toolbar shown only when a window is maximized */}
       {maximizedWindow && <DesktopControls />}
 
-      {/* Windows Layer */}
-      <div className={`relative z-10 w-full h-full ${
-        maximizedWindow ? "" : "p-4"
-        }`}
-      >
-        {(maximizedWindow
-          ? [maximizedWindow]
-          : windows
-              .filter((w) => w.isOpen && !w.isMinimized)
-              .sort((a, b) => a.zIndex - b.zIndex)
-        ).map((window) => (
+      {/* Windows Layer — always render all visible windows */}
+      <div className={`relative z-10 w-full h-full ${maximizedWindow ? "" : "p-4"}`}>
+        {visibleWindows.map((window) => (
           <Window key={window.id} data={window} />
         ))}
       </div>

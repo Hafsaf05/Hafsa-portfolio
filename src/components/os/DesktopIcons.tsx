@@ -7,6 +7,7 @@ import {
   FolderKanban,
   Mail,
   BookOpen,
+  Network,
 } from "lucide-react";
 
 const icons = [
@@ -22,7 +23,12 @@ const icons = [
   },
   {
     id: "research",
-    label: "Research.pdf",
+    label: "Skills_Graph.sys",
+    icon: Network,
+  },
+  {
+    id: "papers",
+    label: "Research_Papers.exe",
     icon: BookOpen,
   },
   {
