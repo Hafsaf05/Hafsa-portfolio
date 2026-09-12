@@ -1,0 +1,214 @@
+[
+  {
+    "path": ".eslintrc.json",
+    "sha256": "3bd4436f498a94ca2e3b1b4dabcddea71d52171347bc1b59c88bd0273a733d87"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "9d27054d945fdf4a150a0afb8b7fc15ef246e6a5d08952efc9212e6853720def"
+  },
+  {
+    "path": "PORTFOLIO_UPDATE.md",
+    "sha256": "b3d597b26ed0a4120ae6304d9febc587233dd9f3ab7910eac584c9a7fddc8fb7"
+  },
+  {
+    "path": "README.md",
+    "sha256": "99e5e9c4cbc629d6887e20e8f0b7b1f34bac9c134e835a5f614428d07a6e1fca"
+  },
+  {
+    "path": "next-env.d.ts",
+    "sha256": "9269d492817e359123ac64c8205e5d05dab63d71a3a7a229e68b5d9a0e8150bf"
+  },
+  {
+    "path": "next.config.js",
+    "sha256": "d0e9e1dfda197475b2e79d0b21dd02fd48eadba40891f8140e89949f0783d2e1"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "3eda4666fa39ebcd47d960dde255757f03b87cf51e56eb3481e3ec54c9e0ecf5"
+  },
+  {
+    "path": "package.json",
+    "sha256": "606306ac9c618c000e865074334bd8efdcb1dc9b2dc223a225b07651f892c830"
+  },
+  {
+    "path": "postcss.config.mjs",
+    "sha256": "ac31e2a95ef64fe27ceb4124e101675273107aae2e33bc490b01d919e7f03646"
+  },
+  {
+    "path": "public/certificates/ai-ml-workshop-2025.jpg",
+    "sha256": "a80e221fa93c57661f806cb98cea110c2c1ca448d1ff5b937ca62e0a9f0a6454"
+  },
+  {
+    "path": "public/certificates/cbit-sudhee-2026.png",
+    "sha256": "49e5c3441831c461c40e4a4247bfaa442280e08cba11bdf75883bfb8e892c817"
+  },
+  {
+    "path": "public/certificates/devqueens-2026.jpg",
+    "sha256": "ccca9cc570c1edf9be5d7376a6e4102c03d35a3f87656483206ebc65eee4b404"
+  },
+  {
+    "path": "public/certificates/google-sentiment-badge.png",
+    "sha256": "230a15e72209d62dc627e50b11bad7b62bfe857137c15f501532ce77c4770d2a"
+  },
+  {
+    "path": "public/certificates/harithon-2025.jpg",
+    "sha256": "d754517d886133319cc837b1a9f546fef1299ddc2d73239ebf35228907e2baad"
+  },
+  {
+    "path": "public/certificates/iare-ai-frontier-2026.png",
+    "sha256": "4d8873068878c046e55c24ecb078726e3e823187db8a57d5a6ad5e7e5b5c6347"
+  },
+  {
+    "path": "public/certificates/specathon-2025.jpg",
+    "sha256": "77bbfd4d052f34ec773bf69131e30419b26ba99cdc219afa44261e6e2332c7f9"
+  },
+  {
+    "path": "public/resume/Hafsa_Fathima_Resume.pdf",
+    "sha256": "303fdf48764e701f4796954103ba325a4a87162cdf6ae0ed549295b2c53ace17"
+  },
+  {
+    "path": "scripts/dev.mjs",
+    "sha256": "7189f0204baa64fc04cac0e3452e2164dd918cde88d2a4ba8340f6f0250ff6a7"
+  },
+  {
+    "path": "src/app/audit/page.tsx",
+    "sha256": "816b8069f54843ea0b75effdbc2b5f659abf655602064a6cf75d334a07cbe805"
+  },
+  {
+    "path": "src/app/audit/surface.tsx",
+    "sha256": "842375e7963cb02bd0792cce4631422b9fbda71e8f443d56b3db22a6c6e00b89"
+  },
+  {
+    "path": "src/app/error.tsx",
+    "sha256": "be9a21e83d43567f9a168efe0809457544c6931d58f6fb57f7f33750f9612054"
+  },
+  {
+    "path": "src/app/globals.css",
+    "sha256": "2856dd56b55943a60f1fd1233d290bbdf2f299599c8e482d499be2dd20136793"
+  },
+  {
+    "path": "src/app/icon.svg",
+    "sha256": "4ea375bbc18f37ee6c596d7ce2900414c6768823f6c33d79f3ff4303c4968648"
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "sha256": "5bc63f12454b41559dd9d02113b00526574ae65dc33b0fef0876332a76a25836"
+  },
+  {
+    "path": "src/app/loading.tsx",
+    "sha256": "002d29fa8c031ea7afe162380f6073a63e99c7cfcd42c47b3669f92ac92a2a57"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "sha256": "fbd20d9b8367fd010833d8bc7141d77f5c47dce194944ae1d52e5a57d7624482"
+  },
+  {
+    "path": "src/app/robots.ts",
+    "sha256": "8fe5eb720dcf4860214b166f25cba351209d4c408a4123362e1571416a135af6"
+  },
+  {
+    "path": "src/app/sitemap.ts",
+    "sha256": "2c272423da87254f8b55867a80d18f1eb46aa0be097861e2991c19f6c539a501"
+  },
+  {
+    "path": "src/components/3d/Background3D.tsx",
+    "sha256": "2054d037d1f1fdcad8cc477a3956b19512ee8afbd36207329a13412fc1738260"
+  },
+  {
+    "path": "src/components/3d/KnowledgeGraph.tsx",
+    "sha256": "c78e7677ff4c0b18ce62a0363bf6e4a1a302d252423140d74fe90c96207a95ea"
+  },
+  {
+    "path": "src/components/3d/SkillConstellation.tsx",
+    "sha256": "3eb743daa2f7d76294e202b3bdfc05916818ea4ac6c2962c53726240a6dd1a68"
+  },
+  {
+    "path": "src/components/ai/AIAssistant.tsx",
+    "sha256": "4a03a5499cf69c2e9eb9a6caa48fcc5a15538048c148c27c04eb1a2f58dda9aa"
+  },
+  {
+    "path": "src/components/dashboard/Stats.tsx",
+    "sha256": "b3863a29b099142e3eb471ad4620b7dbfccd2f455b2352fdc4e23fea9eea5b31"
+  },
+  {
+    "path": "src/components/os/BootSequence.tsx",
+    "sha256": "2c2b7a3383df0c7e3fbd709b0bc754f93f8a24f85e1ec6c8cecf97caf9afef09"
+  },
+  {
+    "path": "src/components/os/Desktop.tsx",
+    "sha256": "e1b033b1cb7fbcf06a5e027b38d209583a5c6978531c7d59846410dd4e8173bc"
+  },
+  {
+    "path": "src/components/os/DesktopControls.tsx",
+    "sha256": "22311e8455203bfb0b455a73471308326915d2302215bdef45cdc15c29dd33b4"
+  },
+  {
+    "path": "src/components/os/DesktopIcons.tsx",
+    "sha256": "f4d1a16089fa1f11ec9b4648df966aa4b0f95c62e77bb549ab54397261e8feaf"
+  },
+  {
+    "path": "src/components/os/Taskbar.tsx",
+    "sha256": "4c82ded077468f8d0105775b431f75641adbfd465d41a9fef3c02f22d1e2aac4"
+  },
+  {
+    "path": "src/components/os/Window.tsx",
+    "sha256": "59d3183f981ee452f5d68b0f5e5b9abc5e71519b879368f50ea859f2068f7696"
+  },
+  {
+    "path": "src/components/windows/Certificates.tsx",
+    "sha256": "a90459b2c2b0efe74058bfe3cb2c651d744aa63f32222161f59faf86da70922a"
+  },
+  {
+    "path": "src/components/windows/Contact.tsx",
+    "sha256": "215384d247847abce4b43a9218287242b320e5580a0c311c7cf5210891f1d531"
+  },
+  {
+    "path": "src/components/windows/ProjectExplorer.tsx",
+    "sha256": "ee1fff36217400766109bde19c4e88ab94053894d6c1f952b47477c61d1fe0a6"
+  },
+  {
+    "path": "src/components/windows/ResearchPublications.tsx",
+    "sha256": "e536d9b67c145a173c5f9c4b8ac336167779ad1c90a062a93c82229a853c02fd"
+  },
+  {
+    "path": "src/components/windows/ResumeViewer.tsx",
+    "sha256": "1c3c785b093d5f08f7048903b7050ae88f865d6e0b352667bc9e9a86309bce6b"
+  },
+  {
+    "path": "src/components/windows/Terminal.tsx",
+    "sha256": "b18b98000c28e2865098dd9644e271a31ef564bced872f43f6cac5ab440966fc"
+  },
+  {
+    "path": "src/lib/certificates.ts",
+    "sha256": "4de4dc330c7790ddd80b8a7b600315973062c4bb57d93340e71d3604b7011096"
+  },
+  {
+    "path": "src/lib/data.ts",
+    "sha256": "a49184c6a4ebce5e8f09244460f8a557a4df8fe1c144996200c52c90eeb6d098"
+  },
+  {
+    "path": "src/lib/window-geometry.ts",
+    "sha256": "cd831fe7d11285ea8ef3f33404735a24b764e2a9434017528897d1fbe64b35dd"
+  },
+  {
+    "path": "src/store/window-store.ts",
+    "sha256": "ef9e886b1c78aca5039b8337c3763d70093632059e710b3308c273dcc901c75c"
+  },
+  {
+    "path": "src/types/index.ts",
+    "sha256": "a884cf6fc7495aabc89869e47b090a6ca55106479353262f7119c96d29140fb8"
+  },
+  {
+    "path": "tailwind.config.ts",
+    "sha256": "be32207a710ded76726e18b06072d608945f8dc172f522343e335d6f7345af23"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha256": "a4f38619e59045336b4cac240d71e06b4132defe831a764d2b81564f92792f6f"
+  },
+  {
+    "path": "window-qa.json",
+    "sha256": "263c6e1521d3cee73a87c06c37ee97ab98b4d987462d09380371e0db979d98ee"
+  }
+]

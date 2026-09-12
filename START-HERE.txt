@@ -1,0 +1,20 @@
+HAFSA PORTFOLIO — CERTIFICATES V2
+
+Extract into a NEW empty folder. Open the hafsa-portfolio-certificates-v2 folder containing package.json.
+
+Run:
+  npm ci
+  npm run dev -- --port 3001
+
+Open http://localhost:3001 (not the deployed Vercel site or an older server on port 3000).
+
+This package includes:
+- Certificates as the first portfolio app
+- Six certificate images and one Google Skills badge
+- Ten project entries
+- Updated resume PDF
+- Corrected undergraduate metadata
+- Revised full-viewport window manager
+
+Check src/components/windows/Certificates.tsx, src/lib/certificates.ts and public/certificates/.
+PORTFOLIO_UPDATE.md states the actual QA scope and remaining limits.
