@@ -4,7 +4,7 @@
 
 **An immersive, OS-inspired portfolio built to showcase my journey in Artificial Intelligence & Machine Learning**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-6C63FF?style=for-the-badge)](https://your-vercel-url.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Portfolio-6C63FF?style=for-the-badge)](https://hafsaff-portfolio.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-hafsa--fathima05-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/hafsa-fathima05)
 [![GitHub](https://img.shields.io/badge/GitHub-Hafsaf05-181717?style=for-the-badge&logo=github)](https://github.com/Hafsaf05)
 
