@@ -143,6 +143,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | 📧 Email | [hafsahffathima05@gmail.com](mailto:hafsahffathima05@gmail.com) |
 | 💼 LinkedIn | [linkedin.com/in/hafsa-fathima05](https://linkedin.com/in/hafsa-fathima05) |
 | 🐙 GitHub | [github.com/Hafsaf05](https://github.com/Hafsaf05) |
+| Portfolio | [portfoliio](https://hafsaff-portfolio.vercel.app/) |
 
 ---
 
